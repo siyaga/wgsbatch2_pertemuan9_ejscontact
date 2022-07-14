@@ -38,7 +38,21 @@
       
       <h1>Web Server Node JS</h1>
       <p>Welcome to my page <%= nama %> </p>
+      <h1>Contact List</h1>
+      <ul>
+        <!-- <% for( let index = 0; index < cont.length; index++ ) { %>
+          <li><%= cont[index].name %> </li>
+          <li><%= cont[index].email %> </li>
+        
+        <% } %> -->
+        
+        <% cont.forEach(data => { %>
+          <li><%= data.name %> </li>
+          <li><%= data.email %> </li>
+        <% }) %>
+      </ul>
     </div>
+    
     
    
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
